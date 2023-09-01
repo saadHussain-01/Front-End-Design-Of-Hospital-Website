@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>   
+    <!-- Boxicon Link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- FontAwesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hospital Website</title>
+</head>
+
+<body>
+
+    <!-- header section -->
+    <nav class="navbar navbar-expand-md fixed-top">
+        <a href="#" class="navbar-brand ms-3">Al-Mustafa</a>
+
+        <button class="navbar-toggler me-3 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
+            <i class='bx bx-menu bx-md'></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="btn">
+            <ul class="navbar-nav ms-9">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="service.html" class="nav-link">Services</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Contact</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blogs</a>
+                </li>
+            </ul>
+            
+        </div>
+
+        
+        <div class="ml-auto mt-2" id="head-btn">
+            <a href="contact.html#contactForm">Make Appointment</a>
+        </div>
+    </nav>
+
+
+    <div id="contact">
+        <div class="contact-content">
+          <h2>Contact Us</h2>
+          <h3>Reach Us As Soon As Possible</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quo veritatis ad assumenda aliquid eos impedit dolorum tempora beatae illum.
+          </p>
+          <div class="contact-btn">
+            <a href="about.html">Read More</a>
+          </div>
+        </div>
+  </div>
+
+
+  <div class="container center-form">
+    <form id="contactForm" method="post">
+        <div class="mb-3">
+          <label for="firstName" class="form-label">First Name</label>
+          <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Enter your first-name">
+          <span id="firstnameError" class="error"></span>
+        </div>
+
+        <div class="mb-3">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Enter your last-name">
+          <span id="lastnameError" class="error"></span>
+        </div>
+
+        <div class="mb-3">
+            <label for="number" class="form-label">Phone Number</label>
+            <input type="number" class="form-control" name="number" id="number" placeholder="Enter your phone number">
+            <span id="phonenoError" class="error"></span>
+          </div>
+
+
+          <div class="mb-3">
+            <label for="disease" class="form-label">Select the disease</label>
+            <select class="form-control" id="disease">
+                <option value="heart issue">Heart Issue</option>
+                <option value="ct scan">CT Scan</option>
+                <option value="normal checkup">Normal Checkup</option>
+                <option value="mri">MRI</option>
+                <option value="teeth issue">Teeth Issue</option>
+                <option value="physiotherapy">Physiotherapy</option>
+                <option value="skin checkup">Skin Checkup</option>
+                <option value="bones issue">Bones/Muscles Issues</option>
+                <option value="homeopathy">Homeopathy</option>
+            </select>
+            <span id="diseaseError" class="error"></span>
+        </div>
+
+
+          <div class="mb-3">
+            <label for="dateOfAppointment" class="form-label">Date Of Booking</label>
+            <input type="date" class="form-control" name="dateOfAppointment" id="dateOfAppointment">
+            <span id="dateError" class="error"></span>
+          </div>
+
+          
+
+          <div class="mb-3">
+            <label for="Specialist" class="form-label">Select Game Type</label>
+            <select class="form-control" id="Specialist">
+                <option value="bilal ali">Bilal Ali</option>
+                <option value="nasir hussain">Nasir Hussain</option>
+                <option value="sarah khan">Sarah Khan</option>
+                <option value="rafia baig">Rafia Baig</option>
+                <option value="arif shahzad">Arif Shahzad</option>
+                <option value="sameena irfan">Sameena Irfan</option>
+                <option value="raheel seth">Raheel Seth</option>
+                <option value="sahira sheikh">Sahira Sheikh</option>
+                <option value="sameer obaid">Sameer Obaid</option>
+            </select>
+            <span id="doctorError" class="error"></span>
+        </div>
+        <div class="text-center">
+        <button class="form-btn" type="submit" href="#">Submit</button>
+        </div>
+</form>
+</div> 
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col-md-12">
+       <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28947.944725451045!2d67.0120114005502!3d24.91526675697996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33fbd469d9bcd%3A0x749325c6e39952f3!2sNazimabad%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1692640395932!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+</div>
+</div> 
+
+
+
+  <!--  Footer Section -->
+  <div class="container-fluid" id="footer">
+    <div class="row">
+
+     <div class="col-lg-8 col-md-8 col-sm-8">
+         <div class="footer-content text-center">
+             <p>Copyright &copy; 2023 by Saad Hussain | All Right Reserved</p>
+         </div>
+         </div>
+         
+         <div class="col-lg-4 col-md-4 col-sm-4">
+         <div class="footer-icon-Top text-center">
+             <a href="contact.html"><i class='bx bx-up-arrow-alt'></i></a>
+         </div>
+         </div>
+
+     </div>
+    </div>
+</div> 
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+<script src="js/script.js"></script>
+
+
+  </body>
+  </html>
